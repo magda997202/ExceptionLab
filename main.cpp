@@ -5,8 +5,8 @@
  * This program reads shape data from a file, validates it, and calculates
  * areas. It handles all file and data exceptions.
  *
- * @author [Your Name Here]
- * @date [Current Date]
+ * @author Magda Hussein
+ * @date 3/29/2026
  * @version 1.0
  */
 

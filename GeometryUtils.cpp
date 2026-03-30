@@ -9,10 +9,11 @@
  * of squares, rectangles, and circles. It is responsible for
  * validating input and throwing exceptions on invalid data.
  *
- * @author [Your Name Here]
- * @date [Current Date]
+ * @author Magda Hussein
+ * @date 3/29/2026
  * @version 1.0
  */
+
 
 #include "GeometryUtils.h"
 #include <iostream>

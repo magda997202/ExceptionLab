@@ -8,8 +8,8 @@
  * This file contains the function declarations (prototypes) for an
  * overloaded 'calculateArea' function and a 'calculateCircleArea' function.
  *
- * @author [Your Name Here]
- * @date [Current Date]
+ * @author Magda Hussein
+ * @date 3/29/2026
  * @version 1.0
  */
 //this is an alternative method of preventing multiple compile attempts on this file

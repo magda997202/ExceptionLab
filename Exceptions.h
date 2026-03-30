@@ -5,8 +5,8 @@
  * This file defines the interfaces for custom exceptions,
  * including FileOpenException and ParseException.
  *
- * @author [Your Name Here]
- * @date [Current Date]
+ * @author Magda Hussein
+ * @date 3/29/2026
  * @version 1.0
  */
 

@@ -5,8 +5,8 @@
  * This file provides the definitions for the constructors
  * and 'what()' methods for the custom exception classes.
  *
- * @author [Your Name Here]
- * @date [Current Date]
+ * @author Magda Hussein
+ * @date 3/29/2026
  * @version 1.0
  */
 
