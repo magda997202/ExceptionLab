@@ -20,7 +20,7 @@ using namespace std;
 
 /**
  * @brief Attempts to open a file, handling failures and retries.
- * * This function contains the logic that the student must
+ * This function contains the logic that the student must
  * convert to use try...catch with FileOpenException.
  *
  * @param file The ifstream object to be opened (passed by reference).
@@ -31,9 +31,15 @@ void openFileForReading(std::ifstream& file, std::string initialFilename) {
     // STUDENT TODO: Replace the following 'if' block with a
     // try...catch block that throws and catches a FileOpenException.
 
-    file.open(initialFilename);
-    if (!file.is_open()) {
-        cerr << "Error: File could not be opened: " << initialFilename << endl;
+    try {
+        file.open(initialFilename);
+        if (!file.is_open()) {
+            throw FileOpenException("Failed to open file: " + initialFilename);
+        }
+        cout << "File opened successfully: " << initialFilename << endl;
+    }
+    catch (const FileOpenException& e) {
+        cerr << "Error: " << e.what() << endl;
 
         // This logic should be inside your 'catch' block
         string alternativeFilename;
@@ -48,8 +54,5 @@ void openFileForReading(std::ifstream& file, std::string initialFilename) {
             exit(1); // Exit the program with an error code
         }
         cout << "Alternative file opened successfully: " << alternativeFilename << endl;
-    } else {
-        cout << "File opened successfully: " << initialFilename << endl;
     }
 }
-
